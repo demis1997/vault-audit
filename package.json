@@ -1,0 +1,41 @@
+{
+  "name": "credits",
+  "version": "1.0.0",
+  "description": "eCredits contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "test-ci": "npx hardhat --network hardhat test",
+    "coverage": "npx hardhat coverage",
+    "compile": "npx hardhat compile",
+    "deploy-act": "npx hardhat --network dev test ./scripts/deployEActivityOnly.js",
+    "deploy-nometa": "npx hardhat --network dev test ./scripts/deployNoMetaToken.js",
+    "deploy-transferable": "npx hardhat --network dev test ./scripts/deployTransferableToken.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://cryptixch@dev.azure.com/cryptixch/eCredits/_git/contracts"
+  },
+  "author": "Cryptix LABS GmbH",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/hardhat-upgrades": "^1.10.0",
+    "@openzeppelin/test-helpers": "^0.5.13",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.2",
+    "hardhat-test-utils": "^0.1.1",
+    "mocha": "^7.2.0",
+    "mocha-junit-reporter": "^2.0.0",
+    "solidity-coverage": "^0.8.2",
+    "web3": "^1.3.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1",
+    "@openzeppelin/contracts-upgradeable": "^4.3.1"
+  }
+}
