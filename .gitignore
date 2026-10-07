@@ -355,3 +355,8 @@ node_modules
 cache
 artifacts
 /contracts/.deps/*
+
+# Local environments and generated artifacts
+.env
+.env.*
+!.env.example
